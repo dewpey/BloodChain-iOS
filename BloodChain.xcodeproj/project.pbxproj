@@ -7,13 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D43DA2D1D503DBF00AD2908 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D43DA2C1D503DBF00AD2908 /* LoginViewController.swift */; };
+		0D43DA311D505AF800AD2908 /* B68UIFloatLabelTextField.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D43DA301D505AF800AD2908 /* B68UIFloatLabelTextField.framework */; };
+		0D43DA3A1D505AFF00AD2908 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D43DA391D505AFF00AD2908 /* SwiftyJSON.framework */; };
 		0D8399631D0DF95D0056F8B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8399621D0DF95D0056F8B7 /* AppDelegate.swift */; };
-		0D8399651D0DF95D0056F8B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8399641D0DF95D0056F8B7 /* ViewController.swift */; };
+		0D8399651D0DF95D0056F8B7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8399641D0DF95D0056F8B7 /* MainViewController.swift */; };
 		0D8399681D0DF95D0056F8B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D8399661D0DF95D0056F8B7 /* Main.storyboard */; };
 		0D83996B1D0DF95D0056F8B7 /* BloodChain.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0D8399691D0DF95D0056F8B7 /* BloodChain.xcdatamodeld */; };
 		0D83996D1D0DF95D0056F8B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D83996C1D0DF95D0056F8B7 /* Assets.xcassets */; };
 		0D8399701D0DF95D0056F8B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D83996E1D0DF95D0056F8B7 /* LaunchScreen.storyboard */; };
 		0D83997B1D0DF95E0056F8B7 /* BloodChainUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D83997A1D0DF95E0056F8B7 /* BloodChainUITests.swift */; };
+		0D8399861D0DFC850056F8B7 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8399851D0DFC850056F8B7 /* ScannerViewController.swift */; };
+		0D83998A1D0DFFC10056F8B7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D8399891D0DFFC10056F8B7 /* AVFoundation.framework */; };
+		0D83999E1D0E046F0056F8B7 /* BloodDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D83999D1D0E046F0056F8B7 /* BloodDataViewController.swift */; };
+		0D8399A21D0E43A50056F8B7 /* AddBloodDataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8399A11D0E43A40056F8B7 /* AddBloodDataTableViewController.swift */; };
+		0DB079161D6D4FF000612DF0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0DB079151D6D4FF000612DF0 /* GoogleService-Info.plist */; };
+		0DDC299C1D0ED5B3007F0743 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDC299B1D0ED5B3007F0743 /* SwiftyJSON.swift */; };
+		C645607B9EA48D285328D6B0 /* Pods_BloodChain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00D299A805CB975B3A839D9B /* Pods_BloodChain.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,12 +34,65 @@
 			remoteGlobalIDString = 0D83995E1D0DF95D0056F8B7;
 			remoteInfo = BloodChain;
 		};
+		0DDC29A71D0ED601007F0743 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0DDC299D1D0ED600007F0743 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2E4FEFDB19575BE100351305;
+			remoteInfo = "SwiftyJSON iOS";
+		};
+		0DDC29A91D0ED601007F0743 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0DDC299D1D0ED600007F0743 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2E4FEFE619575BE100351305;
+			remoteInfo = "SwiftyJSON iOS Tests";
+		};
+		0DDC29AB1D0ED601007F0743 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0DDC299D1D0ED600007F0743 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9C7DFC5B1A9102BD005AA3F7;
+			remoteInfo = "SwiftyJSON OSX";
+		};
+		0DDC29AD1D0ED601007F0743 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0DDC299D1D0ED600007F0743 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9C7DFC651A9102BD005AA3F7;
+			remoteInfo = "SwiftyJSON OSX Tests";
+		};
+		0DDC29AF1D0ED601007F0743 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0DDC299D1D0ED600007F0743 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4D7CCE81B9465A700EE7221;
+			remoteInfo = "SwiftyJSON watchOS";
+		};
+		0DDC29B11D0ED601007F0743 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0DDC299D1D0ED600007F0743 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7236B4F61BAC14150020529B;
+			remoteInfo = "SwiftyJSON tvOS";
+		};
+		0DDC29B31D0ED601007F0743 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0DDC299D1D0ED600007F0743 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A8580F741BCF5C5B00DA927B;
+			remoteInfo = "SwiftyJSON tvOS Tests";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00D299A805CB975B3A839D9B /* Pods_BloodChain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BloodChain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D43DA2C1D503DBF00AD2908 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0D43DA301D505AF800AD2908 /* B68UIFloatLabelTextField.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = B68UIFloatLabelTextField.framework; path = "Pods/../build/Debug-iphoneos/B68UIFloatLabelTextField.framework"; sourceTree = "<group>"; };
+		0D43DA391D505AFF00AD2908 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../Library/Developer/Xcode/DerivedData/BloodChain-fcqnjaljykehlghhlanrhnidwtzd/Build/Products/Debug-iphoneos/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		0D83995F1D0DF95D0056F8B7 /* BloodChain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BloodChain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D8399621D0DF95D0056F8B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0D8399641D0DF95D0056F8B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0D8399641D0DF95D0056F8B7 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		0D8399671D0DF95D0056F8B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0D83996A1D0DF95D0056F8B7 /* BloodChain.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BloodChain.xcdatamodel; sourceTree = "<group>"; };
 		0D83996C1D0DF95D0056F8B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -38,6 +101,15 @@
 		0D8399761D0DF95E0056F8B7 /* BloodChainUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BloodChainUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D83997A1D0DF95E0056F8B7 /* BloodChainUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloodChainUITests.swift; sourceTree = "<group>"; };
 		0D83997C1D0DF95E0056F8B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D8399851D0DFC850056F8B7 /* ScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
+		0D8399891D0DFFC10056F8B7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		0D83999D1D0E046F0056F8B7 /* BloodDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = BloodDataViewController.swift; sourceTree = "<group>"; };
+		0D8399A11D0E43A40056F8B7 /* AddBloodDataTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddBloodDataTableViewController.swift; sourceTree = "<group>"; };
+		0DB079151D6D4FF000612DF0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0DDC299B1D0ED5B3007F0743 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		0DDC299D1D0ED600007F0743 /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = "../../../Downloads/SwiftyJSON-master/SwiftyJSON.xcodeproj"; sourceTree = "<group>"; };
+		53E4BD42117812DB2AA019E5 /* Pods-BloodChain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BloodChain.release.xcconfig"; path = "Pods/Target Support Files/Pods-BloodChain/Pods-BloodChain.release.xcconfig"; sourceTree = "<group>"; };
+		AF9B2BFBEB9EB05B049C5D7A /* Pods-BloodChain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BloodChain.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BloodChain/Pods-BloodChain.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +117,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D43DA3A1D505AFF00AD2908 /* SwiftyJSON.framework in Frameworks */,
+				0D43DA311D505AF800AD2908 /* B68UIFloatLabelTextField.framework in Frameworks */,
+				0D83998A1D0DFFC10056F8B7 /* AVFoundation.framework in Frameworks */,
+				C645607B9EA48D285328D6B0 /* Pods_BloodChain.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,9 +137,13 @@
 		0D8399561D0DF95D0056F8B7 = {
 			isa = PBXGroup;
 			children = (
+				0D8399891D0DFFC10056F8B7 /* AVFoundation.framework */,
 				0D8399611D0DF95D0056F8B7 /* BloodChain */,
 				0D8399791D0DF95E0056F8B7 /* BloodChainUITests */,
 				0D8399601D0DF95D0056F8B7 /* Products */,
+				0DDC299D1D0ED600007F0743 /* SwiftyJSON.xcodeproj */,
+				F457AC9F2C9A8F8918DCECC5 /* Pods */,
+				CA2B5EE2175F0D68017BB02C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,13 +159,19 @@
 		0D8399611D0DF95D0056F8B7 /* BloodChain */ = {
 			isa = PBXGroup;
 			children = (
+				0DDC299B1D0ED5B3007F0743 /* SwiftyJSON.swift */,
 				0D8399621D0DF95D0056F8B7 /* AppDelegate.swift */,
-				0D8399641D0DF95D0056F8B7 /* ViewController.swift */,
+				0D8399641D0DF95D0056F8B7 /* MainViewController.swift */,
+				0D8399A11D0E43A40056F8B7 /* AddBloodDataTableViewController.swift */,
+				0D8399851D0DFC850056F8B7 /* ScannerViewController.swift */,
+				0D83999D1D0E046F0056F8B7 /* BloodDataViewController.swift */,
+				0D43DA2C1D503DBF00AD2908 /* LoginViewController.swift */,
 				0D8399661D0DF95D0056F8B7 /* Main.storyboard */,
 				0D83996C1D0DF95D0056F8B7 /* Assets.xcassets */,
 				0D83996E1D0DF95D0056F8B7 /* LaunchScreen.storyboard */,
 				0D8399711D0DF95D0056F8B7 /* Info.plist */,
 				0D8399691D0DF95D0056F8B7 /* BloodChain.xcdatamodeld */,
+				0DB079151D6D4FF000612DF0 /* GoogleService-Info.plist */,
 			);
 			path = BloodChain;
 			sourceTree = "<group>";
@@ -99,6 +185,39 @@
 			path = BloodChainUITests;
 			sourceTree = "<group>";
 		};
+		0DDC299E1D0ED600007F0743 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0DDC29A81D0ED601007F0743 /* SwiftyJSON.framework */,
+				0DDC29AA1D0ED601007F0743 /* SwiftyJSON iOS Tests.xctest */,
+				0DDC29AC1D0ED601007F0743 /* SwiftyJSON.framework */,
+				0DDC29AE1D0ED601007F0743 /* SwiftyJSON OSX Tests.xctest */,
+				0DDC29B01D0ED601007F0743 /* SwiftyJSON.framework */,
+				0DDC29B21D0ED601007F0743 /* SwiftyJSON.framework */,
+				0DDC29B41D0ED601007F0743 /* SwiftyJSON tvOS Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA2B5EE2175F0D68017BB02C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D43DA391D505AFF00AD2908 /* SwiftyJSON.framework */,
+				0D43DA301D505AF800AD2908 /* B68UIFloatLabelTextField.framework */,
+				00D299A805CB975B3A839D9B /* Pods_BloodChain.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F457AC9F2C9A8F8918DCECC5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AF9B2BFBEB9EB05B049C5D7A /* Pods-BloodChain.debug.xcconfig */,
+				53E4BD42117812DB2AA019E5 /* Pods-BloodChain.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +225,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0D83997F1D0DF95E0056F8B7 /* Build configuration list for PBXNativeTarget "BloodChain" */;
 			buildPhases = (
+				71AFF4CB4D80418E8E12CBAB /* Check Pods Manifest.lock */,
 				0D83995B1D0DF95D0056F8B7 /* Sources */,
 				0D83995C1D0DF95D0056F8B7 /* Frameworks */,
 				0D83995D1D0DF95D0056F8B7 /* Resources */,
+				A5B86C20C530312092414752 /* Embed Pods Frameworks */,
+				C24AEFD504991D9FEEBE4089 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,6 +271,7 @@
 				TargetAttributes = {
 					0D83995E1D0DF95D0056F8B7 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 5WHUAKUFHC;
 					};
 					0D8399751D0DF95E0056F8B7 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -167,6 +290,12 @@
 			mainGroup = 0D8399561D0DF95D0056F8B7;
 			productRefGroup = 0D8399601D0DF95D0056F8B7 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 0DDC299E1D0ED600007F0743 /* Products */;
+					ProjectRef = 0DDC299D1D0ED600007F0743 /* SwiftyJSON.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				0D83995E1D0DF95D0056F8B7 /* BloodChain */,
@@ -174,6 +303,58 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		0DDC29A81D0ED601007F0743 /* SwiftyJSON.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyJSON.framework;
+			remoteRef = 0DDC29A71D0ED601007F0743 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0DDC29AA1D0ED601007F0743 /* SwiftyJSON iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SwiftyJSON iOS Tests.xctest";
+			remoteRef = 0DDC29A91D0ED601007F0743 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0DDC29AC1D0ED601007F0743 /* SwiftyJSON.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyJSON.framework;
+			remoteRef = 0DDC29AB1D0ED601007F0743 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0DDC29AE1D0ED601007F0743 /* SwiftyJSON OSX Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SwiftyJSON OSX Tests.xctest";
+			remoteRef = 0DDC29AD1D0ED601007F0743 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0DDC29B01D0ED601007F0743 /* SwiftyJSON.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyJSON.framework;
+			remoteRef = 0DDC29AF1D0ED601007F0743 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0DDC29B21D0ED601007F0743 /* SwiftyJSON.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyJSON.framework;
+			remoteRef = 0DDC29B11D0ED601007F0743 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0DDC29B41D0ED601007F0743 /* SwiftyJSON tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SwiftyJSON tvOS Tests.xctest";
+			remoteRef = 0DDC29B31D0ED601007F0743 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		0D83995D1D0DF95D0056F8B7 /* Resources */ = {
@@ -183,6 +364,7 @@
 				0D8399701D0DF95D0056F8B7 /* LaunchScreen.storyboard in Resources */,
 				0D83996D1D0DF95D0056F8B7 /* Assets.xcassets in Resources */,
 				0D8399681D0DF95D0056F8B7 /* Main.storyboard in Resources */,
+				0DB079161D6D4FF000612DF0 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,14 +377,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		71AFF4CB4D80418E8E12CBAB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A5B86C20C530312092414752 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BloodChain/Pods-BloodChain-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C24AEFD504991D9FEEBE4089 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BloodChain/Pods-BloodChain-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0D83995B1D0DF95D0056F8B7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D8399651D0DF95D0056F8B7 /* ViewController.swift in Sources */,
+				0D83999E1D0E046F0056F8B7 /* BloodDataViewController.swift in Sources */,
+				0D8399651D0DF95D0056F8B7 /* MainViewController.swift in Sources */,
 				0D8399631D0DF95D0056F8B7 /* AppDelegate.swift in Sources */,
+				0DDC299C1D0ED5B3007F0743 /* SwiftyJSON.swift in Sources */,
+				0D43DA2D1D503DBF00AD2908 /* LoginViewController.swift in Sources */,
 				0D83996B1D0DF95D0056F8B7 /* BloodChain.xcdatamodeld in Sources */,
+				0D8399861D0DFC850056F8B7 /* ScannerViewController.swift in Sources */,
+				0D8399A21D0E43A50056F8B7 /* AddBloodDataTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,23 +566,43 @@
 		};
 		0D8399801D0DF95E0056F8B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF9B2BFBEB9EB05B049C5D7A /* Pods-BloodChain.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = BloodChain/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Cloudgration.BloodChain;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BloodChainInc.BloodChain;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		0D8399811D0DF95E0056F8B7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53E4BD42117812DB2AA019E5 /* Pods-BloodChain.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = BloodChain/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Cloudgration.BloodChain;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BloodChainInc.BloodChain;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -392,6 +647,7 @@
 				0D8399811D0DF95E0056F8B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0D8399821D0DF95E0056F8B7 /* Build configuration list for PBXNativeTarget "BloodChainUITests" */ = {
 			isa = XCConfigurationList;
@@ -400,6 +656,7 @@
 				0D8399841D0DF95E0056F8B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
