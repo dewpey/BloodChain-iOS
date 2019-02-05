@@ -27,12 +27,12 @@ class AddBloodDataTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 5;
     }
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         let numberOfRowsAtSection: [Int] = [3, 4, 1, 1, 1]
         return numberOfRowsAtSection[section]
@@ -92,8 +92,8 @@ class AddBloodDataTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    @IBAction func backButtonPress(sender: AnyObject) {
-        dismissViewControllerAnimated(true, completion: nil)
+    @IBAction func backButtonPress(_ sender: AnyObject) {
+        dismiss(animated: true, completion: nil)
     }
 
     @IBOutlet var genderBox: UITextField!
@@ -107,7 +107,7 @@ class AddBloodDataTableViewController: UITableViewController {
     @IBOutlet var medicationsBox: UITextField!
     @IBOutlet var vaccinationsBox: UITextField!
     
-    @IBAction func createCSV(sender: AnyObject) {
+    @IBAction func createCSV(_ sender: AnyObject) {
         var value: [String] = []
         value.append(genderBox.text!)
         value.append(ageBox.text!)
@@ -120,7 +120,7 @@ class AddBloodDataTableViewController: UITableViewController {
         value.append(medicationsBox.text!)
         value.append(vaccinationsBox.text!)
         print(value)
-        let csvString = value.joinWithSeparator(",")
+        let csvString = value.joined(separator: ",")
         print(csvString)
     }
 }

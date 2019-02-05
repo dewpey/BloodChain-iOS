@@ -7,9 +7,9 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>685118314906-q4va37r2a4iai78dvsbkjgq00i5cl5ij.apps.googleusercontent.com</string>
+	<string>685118314906-3j6gh1512e96f0bmk52iol0676v03o0o.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.685118314906-q4va37r2a4iai78dvsbkjgq00i5cl5ij</string>
+	<string>com.googleusercontent.apps.685118314906-3j6gh1512e96f0bmk52iol0676v03o0o</string>
 	<key>API_KEY</key>
 	<string>AIzaSyBoKPAc9ygFoo1ycxDefhzKBEhkW2xLJrg</string>
 	<key>GCM_SENDER_ID</key>
@@ -17,7 +17,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.Cloudgration.BloodChain</string>
+	<string>com.BloodChainInc.BloodChain</string>
 	<key>PROJECT_ID</key>
 	<string>bloodchain-f10a4</string>
 	<key>STORAGE_BUCKET</key>
@@ -33,7 +33,7 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:685118314906:ios:1b50e08794e3842e</string>
+	<string>1:685118314906:ios:2bf199da92806f3e</string>
 	<key>DATABASE_URL</key>
 	<string>https://bloodchain-f10a4.firebaseio.com</string>
 </dict>

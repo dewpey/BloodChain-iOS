@@ -7,23 +7,65 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		002B8C899165A82BA5FC77D5 /* Pods_BloodChain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0BEBF2BFA7CEB973A3CAD9 /* Pods_BloodChain.framework */; };
 		0D43DA2D1D503DBF00AD2908 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D43DA2C1D503DBF00AD2908 /* LoginViewController.swift */; };
-		0D43DA311D505AF800AD2908 /* B68UIFloatLabelTextField.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D43DA301D505AF800AD2908 /* B68UIFloatLabelTextField.framework */; };
-		0D43DA3A1D505AFF00AD2908 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D43DA391D505AFF00AD2908 /* SwiftyJSON.framework */; };
+		0D5708321EFB69EB0004CFC5 /* BloodPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5708311EFB69EB0004CFC5 /* BloodPageViewController.swift */; };
+		0D5708381EFB6CF10004CFC5 /* GreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5708371EFB6CF10004CFC5 /* GreenViewController.swift */; };
+		0D57083A1EFB6ECE0004CFC5 /* RedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5708391EFB6ECE0004CFC5 /* RedViewController.swift */; };
+		0D57083C1EFB6EDF0004CFC5 /* BlueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D57083B1EFB6EDF0004CFC5 /* BlueViewController.swift */; };
+		0D689FD31EF0788C0030156A /* BloodDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D689FD21EF0788C0030156A /* BloodDataViewController.swift */; };
 		0D8399631D0DF95D0056F8B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8399621D0DF95D0056F8B7 /* AppDelegate.swift */; };
 		0D8399651D0DF95D0056F8B7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8399641D0DF95D0056F8B7 /* MainViewController.swift */; };
 		0D8399681D0DF95D0056F8B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D8399661D0DF95D0056F8B7 /* Main.storyboard */; };
 		0D83996B1D0DF95D0056F8B7 /* BloodChain.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0D8399691D0DF95D0056F8B7 /* BloodChain.xcdatamodeld */; };
-		0D83996D1D0DF95D0056F8B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D83996C1D0DF95D0056F8B7 /* Assets.xcassets */; };
 		0D8399701D0DF95D0056F8B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D83996E1D0DF95D0056F8B7 /* LaunchScreen.storyboard */; };
 		0D83997B1D0DF95E0056F8B7 /* BloodChainUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D83997A1D0DF95E0056F8B7 /* BloodChainUITests.swift */; };
 		0D8399861D0DFC850056F8B7 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8399851D0DFC850056F8B7 /* ScannerViewController.swift */; };
 		0D83998A1D0DFFC10056F8B7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D8399891D0DFFC10056F8B7 /* AVFoundation.framework */; };
-		0D83999E1D0E046F0056F8B7 /* BloodDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D83999D1D0E046F0056F8B7 /* BloodDataViewController.swift */; };
-		0D8399A21D0E43A50056F8B7 /* AddBloodDataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8399A11D0E43A40056F8B7 /* AddBloodDataTableViewController.swift */; };
-		0DB079161D6D4FF000612DF0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0DB079151D6D4FF000612DF0 /* GoogleService-Info.plist */; };
-		0DDC299C1D0ED5B3007F0743 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDC299B1D0ED5B3007F0743 /* SwiftyJSON.swift */; };
-		C645607B9EA48D285328D6B0 /* Pods_BloodChain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00D299A805CB975B3A839D9B /* Pods_BloodChain.framework */; };
+		0D9DDBAE21D01CB70049C978 /* curve-specific.inc in Sources */ = {isa = PBXBuildFile; fileRef = 0D9DDB8C21D01CB60049C978 /* curve-specific.inc */; };
+		0D9DDBAF21D01CB70049C978 /* platform-specific.inc in Sources */ = {isa = PBXBuildFile; fileRef = 0D9DDB9521D01CB60049C978 /* platform-specific.inc */; };
+		0D9DDBB021D01CB70049C978 /* secp256k1.table in Resources */ = {isa = PBXBuildFile; fileRef = 0D9DDB9721D01CB60049C978 /* secp256k1.table */; };
+		0D9DDBB121D01CB70049C978 /* bip39.c in Sources */ = {isa = PBXBuildFile; fileRef = 0D9DDBA021D01CB60049C978 /* bip39.c */; };
+		0D9DDBB221D01CB70049C978 /* hmac.c in Sources */ = {isa = PBXBuildFile; fileRef = 0D9DDBA121D01CB60049C978 /* hmac.c */; };
+		0D9DDBB321D01CB70049C978 /* sha2.c in Sources */ = {isa = PBXBuildFile; fileRef = 0D9DDBA221D01CB60049C978 /* sha2.c */; };
+		0D9DDBB421D01CB70049C978 /* rand.c in Sources */ = {isa = PBXBuildFile; fileRef = 0D9DDBA321D01CB60049C978 /* rand.c */; };
+		0D9DDBB521D01CB70049C978 /* curves.c in Sources */ = {isa = PBXBuildFile; fileRef = 0D9DDBA421D01CB60049C978 /* curves.c */; };
+		0D9DDBB621D01CB70049C978 /* secp256k1.c in Sources */ = {isa = PBXBuildFile; fileRef = 0D9DDBA521D01CB60049C978 /* secp256k1.c */; };
+		0D9DDBB721D01CB70049C978 /* bignum.c in Sources */ = {isa = PBXBuildFile; fileRef = 0D9DDBA621D01CB60049C978 /* bignum.c */; };
+		0D9DDBB821D01CB70049C978 /* ripemd160.c in Sources */ = {isa = PBXBuildFile; fileRef = 0D9DDBA721D01CB60049C978 /* ripemd160.c */; };
+		0D9DDBB921D01CB70049C978 /* uECC.c in Sources */ = {isa = PBXBuildFile; fileRef = 0D9DDBA821D01CB60049C978 /* uECC.c */; };
+		0D9DDBBA21D01CB70049C978 /* bip32.c in Sources */ = {isa = PBXBuildFile; fileRef = 0D9DDBA921D01CB60049C978 /* bip32.c */; };
+		0D9DDBBB21D01CB70049C978 /* sha3.c in Sources */ = {isa = PBXBuildFile; fileRef = 0D9DDBAA21D01CB60049C978 /* sha3.c */; };
+		0D9DDBBC21D01CB70049C978 /* base58.c in Sources */ = {isa = PBXBuildFile; fileRef = 0D9DDBAB21D01CB60049C978 /* base58.c */; };
+		0D9DDBBD21D01CB70049C978 /* ecdsa.c in Sources */ = {isa = PBXBuildFile; fileRef = 0D9DDBAC21D01CB60049C978 /* ecdsa.c */; };
+		0D9DDBBE21D01CB70049C978 /* pbkdf2.c in Sources */ = {isa = PBXBuildFile; fileRef = 0D9DDBAD21D01CB60049C978 /* pbkdf2.c */; };
+		0D9DDBE721D01CBC0049C978 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9DDBC221D01CBB0049C978 /* Crypto.swift */; };
+		0D9DDBE821D01CBC0049C978 /* TransactionUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9DDBC521D01CBB0049C978 /* TransactionUtil.swift */; };
+		0D9DDBE921D01CBC0049C978 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9DDBC621D01CBB0049C978 /* Transaction.swift */; };
+		0D9DDBEA21D01CBC0049C978 /* Contract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9DDBC821D01CBB0049C978 /* Contract.swift */; };
+		0D9DDBEB21D01CBC0049C978 /* AccountUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9DDBCA21D01CBB0049C978 /* AccountUtil.swift */; };
+		0D9DDBEC21D01CBC0049C978 /* ResourceUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9DDBCC21D01CBB0049C978 /* ResourceUtil.swift */; };
+		0D9DDBED21D01CBC0049C978 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9DDBCE21D01CBB0049C978 /* Currency.swift */; };
+		0D9DDBEE21D01CBC0049C978 /* Signature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9DDBD021D01CBB0049C978 /* Signature.swift */; };
+		0D9DDBEF21D01CBC0049C978 /* ChainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9DDBD321D01CBB0049C978 /* ChainRouter.swift */; };
+		0D9DDBF021D01CBC0049C978 /* EOSRPC+Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9DDBD421D01CBB0049C978 /* EOSRPC+Chain.swift */; };
+		0D9DDBF121D01CBC0049C978 /* EOSRPC+History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9DDBD621D01CBB0049C978 /* EOSRPC+History.swift */; };
+		0D9DDBF221D01CBC0049C978 /* HistoryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9DDBD721D01CBB0049C978 /* HistoryRouter.swift */; };
+		0D9DDBF321D01CBC0049C978 /* EOSRPC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9DDBD921D01CBB0049C978 /* EOSRPC.swift */; };
+		0D9DDBF421D01CBC0049C978 /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9DDBDA21D01CBB0049C978 /* BaseRouter.swift */; };
+		0D9DDBF521D01CBC0049C978 /* KeyPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9DDBDC21D01CBB0049C978 /* KeyPair.swift */; };
+		0D9DDBF621D01CBC0049C978 /* PublicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9DDBDD21D01CBB0049C978 /* PublicKey.swift */; };
+		0D9DDBF721D01CBC0049C978 /* PrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9DDBDE21D01CBB0049C978 /* PrivateKey.swift */; };
+		0D9DDBF821D01CBC0049C978 /* ChainModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9DDBE021D01CBB0049C978 /* ChainModels.swift */; };
+		0D9DDBF921D01CBC0049C978 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9DDBE121D01CBC0049C978 /* Error.swift */; };
+		0D9DDBFA21D01CBC0049C978 /* BigInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9DDBE221D01CBC0049C978 /* BigInt.swift */; };
+		0D9DDBFC21D01CBC0049C978 /* SEWallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9DDBE621D01CBC0049C978 /* SEWallet.swift */; };
+		0DBAF21E1EA1C440009946DF /* createNewHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBAF21D1EA1C440009946DF /* createNewHistoryVC.swift */; };
+		0DBAF2221EA1C51B009946DF /* createNewConfirmVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBAF2211EA1C51B009946DF /* createNewConfirmVC.swift */; };
+		0DF980F71DC5ACDC00AD9620 /* createNewInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF980F61DC5ACDB00AD9620 /* createNewInfoVC.swift */; };
+		0DF980F91DC6516E00AD9620 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DF980F81DC6516D00AD9620 /* Images.xcassets */; };
+		0DF980FB1DC6611100AD9620 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0DF980FA1DC6611100AD9620 /* GoogleService-Info.plist */; };
+		186F3B060B5046442DAC46DA /* Pods_BloodChainUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9FE7B22132969C9982727A /* Pods_BloodChainUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,68 +76,20 @@
 			remoteGlobalIDString = 0D83995E1D0DF95D0056F8B7;
 			remoteInfo = BloodChain;
 		};
-		0DDC29A71D0ED601007F0743 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0DDC299D1D0ED600007F0743 /* SwiftyJSON.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 2E4FEFDB19575BE100351305;
-			remoteInfo = "SwiftyJSON iOS";
-		};
-		0DDC29A91D0ED601007F0743 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0DDC299D1D0ED600007F0743 /* SwiftyJSON.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 2E4FEFE619575BE100351305;
-			remoteInfo = "SwiftyJSON iOS Tests";
-		};
-		0DDC29AB1D0ED601007F0743 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0DDC299D1D0ED600007F0743 /* SwiftyJSON.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 9C7DFC5B1A9102BD005AA3F7;
-			remoteInfo = "SwiftyJSON OSX";
-		};
-		0DDC29AD1D0ED601007F0743 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0DDC299D1D0ED600007F0743 /* SwiftyJSON.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 9C7DFC651A9102BD005AA3F7;
-			remoteInfo = "SwiftyJSON OSX Tests";
-		};
-		0DDC29AF1D0ED601007F0743 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0DDC299D1D0ED600007F0743 /* SwiftyJSON.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = E4D7CCE81B9465A700EE7221;
-			remoteInfo = "SwiftyJSON watchOS";
-		};
-		0DDC29B11D0ED601007F0743 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0DDC299D1D0ED600007F0743 /* SwiftyJSON.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 7236B4F61BAC14150020529B;
-			remoteInfo = "SwiftyJSON tvOS";
-		};
-		0DDC29B31D0ED601007F0743 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0DDC299D1D0ED600007F0743 /* SwiftyJSON.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = A8580F741BCF5C5B00DA927B;
-			remoteInfo = "SwiftyJSON tvOS Tests";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00D299A805CB975B3A839D9B /* Pods_BloodChain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BloodChain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D43DA2C1D503DBF00AD2908 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		0D43DA301D505AF800AD2908 /* B68UIFloatLabelTextField.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = B68UIFloatLabelTextField.framework; path = "Pods/../build/Debug-iphoneos/B68UIFloatLabelTextField.framework"; sourceTree = "<group>"; };
-		0D43DA391D505AFF00AD2908 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../Library/Developer/Xcode/DerivedData/BloodChain-fcqnjaljykehlghhlanrhnidwtzd/Build/Products/Debug-iphoneos/SwiftyJSON.framework"; sourceTree = "<group>"; };
+		0D5708311EFB69EB0004CFC5 /* BloodPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BloodPageViewController.swift; sourceTree = "<group>"; };
+		0D5708371EFB6CF10004CFC5 /* GreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreenViewController.swift; sourceTree = "<group>"; };
+		0D5708391EFB6ECE0004CFC5 /* RedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedViewController.swift; sourceTree = "<group>"; };
+		0D57083B1EFB6EDF0004CFC5 /* BlueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlueViewController.swift; sourceTree = "<group>"; };
+		0D689FD21EF0788C0030156A /* BloodDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BloodDataViewController.swift; sourceTree = "<group>"; };
 		0D83995F1D0DF95D0056F8B7 /* BloodChain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BloodChain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D8399621D0DF95D0056F8B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D8399641D0DF95D0056F8B7 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		0D8399671D0DF95D0056F8B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0D83996A1D0DF95D0056F8B7 /* BloodChain.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BloodChain.xcdatamodel; sourceTree = "<group>"; };
-		0D83996C1D0DF95D0056F8B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D83996F1D0DF95D0056F8B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D8399711D0DF95D0056F8B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D8399761D0DF95E0056F8B7 /* BloodChainUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BloodChainUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,13 +97,76 @@
 		0D83997C1D0DF95E0056F8B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D8399851D0DFC850056F8B7 /* ScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
 		0D8399891D0DFFC10056F8B7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		0D83999D1D0E046F0056F8B7 /* BloodDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = BloodDataViewController.swift; sourceTree = "<group>"; };
-		0D8399A11D0E43A40056F8B7 /* AddBloodDataTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddBloodDataTableViewController.swift; sourceTree = "<group>"; };
-		0DB079151D6D4FF000612DF0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		0DDC299B1D0ED5B3007F0743 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
-		0DDC299D1D0ED600007F0743 /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = "../../../Downloads/SwiftyJSON-master/SwiftyJSON.xcodeproj"; sourceTree = "<group>"; };
-		53E4BD42117812DB2AA019E5 /* Pods-BloodChain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BloodChain.release.xcconfig"; path = "Pods/Target Support Files/Pods-BloodChain/Pods-BloodChain.release.xcconfig"; sourceTree = "<group>"; };
-		AF9B2BFBEB9EB05B049C5D7A /* Pods-BloodChain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BloodChain.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BloodChain/Pods-BloodChain.debug.xcconfig"; sourceTree = "<group>"; };
+		0D9DDB8721D01CB60049C978 /* uECC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uECC.h; sourceTree = "<group>"; };
+		0D9DDB8821D01CB60049C978 /* ripemd160.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ripemd160.h; sourceTree = "<group>"; };
+		0D9DDB8921D01CB60049C978 /* asm_arm.inc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asm_arm.inc.h; sourceTree = "<group>"; };
+		0D9DDB8A21D01CB60049C978 /* uECC_vli.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uECC_vli.h; sourceTree = "<group>"; };
+		0D9DDB8B21D01CB60049C978 /* libbase58.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libbase58.h; sourceTree = "<group>"; };
+		0D9DDB8C21D01CB60049C978 /* curve-specific.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = "curve-specific.inc"; sourceTree = "<group>"; };
+		0D9DDB8D21D01CB60049C978 /* types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = types.h; sourceTree = "<group>"; };
+		0D9DDB8E21D01CB60049C978 /* sha3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha3.h; sourceTree = "<group>"; };
+		0D9DDB8F21D01CB60049C978 /* bip32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bip32.h; sourceTree = "<group>"; };
+		0D9DDB9021D01CB60049C978 /* ecdsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ecdsa.h; sourceTree = "<group>"; };
+		0D9DDB9121D01CB60049C978 /* pbkdf2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pbkdf2.h; sourceTree = "<group>"; };
+		0D9DDB9221D01CB60049C978 /* options.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = options.h; sourceTree = "<group>"; };
+		0D9DDB9321D01CB60049C978 /* bip39_english.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bip39_english.h; sourceTree = "<group>"; };
+		0D9DDB9421D01CB60049C978 /* sha2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha2.h; sourceTree = "<group>"; };
+		0D9DDB9521D01CB60049C978 /* platform-specific.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = "platform-specific.inc"; sourceTree = "<group>"; };
+		0D9DDB9621D01CB60049C978 /* hmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hmac.h; sourceTree = "<group>"; };
+		0D9DDB9721D01CB60049C978 /* secp256k1.table */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = secp256k1.table; sourceTree = "<group>"; };
+		0D9DDB9821D01CB60049C978 /* bip39.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bip39.h; sourceTree = "<group>"; };
+		0D9DDB9921D01CB60049C978 /* macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = macros.h; sourceTree = "<group>"; };
+		0D9DDB9A21D01CB60049C978 /* rand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rand.h; sourceTree = "<group>"; };
+		0D9DDB9B21D01CB60049C978 /* curves.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = curves.h; sourceTree = "<group>"; };
+		0D9DDB9C21D01CB60049C978 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		0D9DDB9D21D01CB60049C978 /* bignum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bignum.h; sourceTree = "<group>"; };
+		0D9DDB9E21D01CB60049C978 /* secp256k1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = secp256k1.h; sourceTree = "<group>"; };
+		0D9DDBA021D01CB60049C978 /* bip39.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bip39.c; sourceTree = "<group>"; };
+		0D9DDBA121D01CB60049C978 /* hmac.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hmac.c; sourceTree = "<group>"; };
+		0D9DDBA221D01CB60049C978 /* sha2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sha2.c; sourceTree = "<group>"; };
+		0D9DDBA321D01CB60049C978 /* rand.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rand.c; sourceTree = "<group>"; };
+		0D9DDBA421D01CB60049C978 /* curves.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = curves.c; sourceTree = "<group>"; };
+		0D9DDBA521D01CB60049C978 /* secp256k1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = secp256k1.c; sourceTree = "<group>"; };
+		0D9DDBA621D01CB60049C978 /* bignum.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bignum.c; sourceTree = "<group>"; };
+		0D9DDBA721D01CB60049C978 /* ripemd160.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ripemd160.c; sourceTree = "<group>"; };
+		0D9DDBA821D01CB60049C978 /* uECC.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = uECC.c; sourceTree = "<group>"; };
+		0D9DDBA921D01CB60049C978 /* bip32.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bip32.c; sourceTree = "<group>"; };
+		0D9DDBAA21D01CB60049C978 /* sha3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sha3.c; sourceTree = "<group>"; };
+		0D9DDBAB21D01CB60049C978 /* base58.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = base58.c; sourceTree = "<group>"; };
+		0D9DDBAC21D01CB60049C978 /* ecdsa.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ecdsa.c; sourceTree = "<group>"; };
+		0D9DDBAD21D01CB60049C978 /* pbkdf2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pbkdf2.c; sourceTree = "<group>"; };
+		0D9DDBC221D01CBB0049C978 /* Crypto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
+		0D9DDBC521D01CBB0049C978 /* TransactionUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionUtil.swift; sourceTree = "<group>"; };
+		0D9DDBC621D01CBB0049C978 /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		0D9DDBC821D01CBB0049C978 /* Contract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contract.swift; sourceTree = "<group>"; };
+		0D9DDBCA21D01CBB0049C978 /* AccountUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountUtil.swift; sourceTree = "<group>"; };
+		0D9DDBCC21D01CBB0049C978 /* ResourceUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceUtil.swift; sourceTree = "<group>"; };
+		0D9DDBCE21D01CBB0049C978 /* Currency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		0D9DDBD021D01CBB0049C978 /* Signature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Signature.swift; sourceTree = "<group>"; };
+		0D9DDBD321D01CBB0049C978 /* ChainRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChainRouter.swift; sourceTree = "<group>"; };
+		0D9DDBD421D01CBB0049C978 /* EOSRPC+Chain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EOSRPC+Chain.swift"; sourceTree = "<group>"; };
+		0D9DDBD621D01CBB0049C978 /* EOSRPC+History.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EOSRPC+History.swift"; sourceTree = "<group>"; };
+		0D9DDBD721D01CBB0049C978 /* HistoryRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryRouter.swift; sourceTree = "<group>"; };
+		0D9DDBD921D01CBB0049C978 /* EOSRPC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EOSRPC.swift; sourceTree = "<group>"; };
+		0D9DDBDA21D01CBB0049C978 /* BaseRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
+		0D9DDBDC21D01CBB0049C978 /* KeyPair.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyPair.swift; sourceTree = "<group>"; };
+		0D9DDBDD21D01CBB0049C978 /* PublicKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicKey.swift; sourceTree = "<group>"; };
+		0D9DDBDE21D01CBB0049C978 /* PrivateKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivateKey.swift; sourceTree = "<group>"; };
+		0D9DDBE021D01CBB0049C978 /* ChainModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChainModels.swift; sourceTree = "<group>"; };
+		0D9DDBE121D01CBC0049C978 /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		0D9DDBE221D01CBC0049C978 /* BigInt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BigInt.swift; sourceTree = "<group>"; };
+		0D9DDBE621D01CBC0049C978 /* SEWallet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SEWallet.swift; sourceTree = "<group>"; };
+		0DBAF21D1EA1C440009946DF /* createNewHistoryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = createNewHistoryVC.swift; sourceTree = "<group>"; };
+		0DBAF2211EA1C51B009946DF /* createNewConfirmVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = createNewConfirmVC.swift; sourceTree = "<group>"; };
+		0DF980F61DC5ACDB00AD9620 /* createNewInfoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = createNewInfoVC.swift; sourceTree = "<group>"; };
+		0DF980F81DC6516D00AD9620 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0DF980FA1DC6611100AD9620 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1A0BEBF2BFA7CEB973A3CAD9 /* Pods_BloodChain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BloodChain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F9FE7B22132969C9982727A /* Pods_BloodChainUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BloodChainUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41E94C730620B2A0AEBC0BB5 /* Pods-BloodChainUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BloodChainUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BloodChainUITests/Pods-BloodChainUITests.release.xcconfig"; sourceTree = "<group>"; };
+		52E45792AB01FA6A60F2AEE2 /* Pods-BloodChain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BloodChain.release.xcconfig"; path = "Pods/Target Support Files/Pods-BloodChain/Pods-BloodChain.release.xcconfig"; sourceTree = "<group>"; };
+		F8D2DEDF49FC341693F57626 /* Pods-BloodChainUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BloodChainUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BloodChainUITests/Pods-BloodChainUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FBD420DC8130A92150CEA8D3 /* Pods-BloodChain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BloodChain.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BloodChain/Pods-BloodChain.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,10 +174,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D43DA3A1D505AFF00AD2908 /* SwiftyJSON.framework in Frameworks */,
-				0D43DA311D505AF800AD2908 /* B68UIFloatLabelTextField.framework in Frameworks */,
 				0D83998A1D0DFFC10056F8B7 /* AVFoundation.framework in Frameworks */,
-				C645607B9EA48D285328D6B0 /* Pods_BloodChain.framework in Frameworks */,
+				002B8C899165A82BA5FC77D5 /* Pods_BloodChain.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,6 +183,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				186F3B060B5046442DAC46DA /* Pods_BloodChainUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,13 +193,14 @@
 		0D8399561D0DF95D0056F8B7 = {
 			isa = PBXGroup;
 			children = (
+				0D9DDBBF21D01CBB0049C978 /* Sources */,
+				0D9DDB8521D01CB60049C978 /* Libraries */,
 				0D8399891D0DFFC10056F8B7 /* AVFoundation.framework */,
 				0D8399611D0DF95D0056F8B7 /* BloodChain */,
 				0D8399791D0DF95E0056F8B7 /* BloodChainUITests */,
 				0D8399601D0DF95D0056F8B7 /* Products */,
-				0DDC299D1D0ED600007F0743 /* SwiftyJSON.xcodeproj */,
-				F457AC9F2C9A8F8918DCECC5 /* Pods */,
 				CA2B5EE2175F0D68017BB02C /* Frameworks */,
+				ED29E9230A677B5A2C4E414D /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -159,19 +216,24 @@
 		0D8399611D0DF95D0056F8B7 /* BloodChain */ = {
 			isa = PBXGroup;
 			children = (
-				0DDC299B1D0ED5B3007F0743 /* SwiftyJSON.swift */,
+				0DF980FA1DC6611100AD9620 /* GoogleService-Info.plist */,
 				0D8399621D0DF95D0056F8B7 /* AppDelegate.swift */,
 				0D8399641D0DF95D0056F8B7 /* MainViewController.swift */,
-				0D8399A11D0E43A40056F8B7 /* AddBloodDataTableViewController.swift */,
 				0D8399851D0DFC850056F8B7 /* ScannerViewController.swift */,
-				0D83999D1D0E046F0056F8B7 /* BloodDataViewController.swift */,
 				0D43DA2C1D503DBF00AD2908 /* LoginViewController.swift */,
+				0DF980F61DC5ACDB00AD9620 /* createNewInfoVC.swift */,
+				0DBAF2211EA1C51B009946DF /* createNewConfirmVC.swift */,
+				0DBAF21D1EA1C440009946DF /* createNewHistoryVC.swift */,
 				0D8399661D0DF95D0056F8B7 /* Main.storyboard */,
-				0D83996C1D0DF95D0056F8B7 /* Assets.xcassets */,
 				0D83996E1D0DF95D0056F8B7 /* LaunchScreen.storyboard */,
 				0D8399711D0DF95D0056F8B7 /* Info.plist */,
 				0D8399691D0DF95D0056F8B7 /* BloodChain.xcdatamodeld */,
-				0DB079151D6D4FF000612DF0 /* GoogleService-Info.plist */,
+				0DF980F81DC6516D00AD9620 /* Images.xcassets */,
+				0D689FD21EF0788C0030156A /* BloodDataViewController.swift */,
+				0D5708311EFB69EB0004CFC5 /* BloodPageViewController.swift */,
+				0D5708371EFB6CF10004CFC5 /* GreenViewController.swift */,
+				0D5708391EFB6ECE0004CFC5 /* RedViewController.swift */,
+				0D57083B1EFB6EDF0004CFC5 /* BlueViewController.swift */,
 			);
 			path = BloodChain;
 			sourceTree = "<group>";
@@ -185,35 +247,247 @@
 			path = BloodChainUITests;
 			sourceTree = "<group>";
 		};
-		0DDC299E1D0ED600007F0743 /* Products */ = {
+		0D9DDB8521D01CB60049C978 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				0DDC29A81D0ED601007F0743 /* SwiftyJSON.framework */,
-				0DDC29AA1D0ED601007F0743 /* SwiftyJSON iOS Tests.xctest */,
-				0DDC29AC1D0ED601007F0743 /* SwiftyJSON.framework */,
-				0DDC29AE1D0ED601007F0743 /* SwiftyJSON OSX Tests.xctest */,
-				0DDC29B01D0ED601007F0743 /* SwiftyJSON.framework */,
-				0DDC29B21D0ED601007F0743 /* SwiftyJSON.framework */,
-				0DDC29B41D0ED601007F0743 /* SwiftyJSON tvOS Tests.xctest */,
+				0D9DDB8621D01CB60049C978 /* include */,
+				0D9DDB9F21D01CB60049C978 /* src */,
 			);
-			name = Products;
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		0D9DDB8621D01CB60049C978 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				0D9DDB8721D01CB60049C978 /* uECC.h */,
+				0D9DDB8821D01CB60049C978 /* ripemd160.h */,
+				0D9DDB8921D01CB60049C978 /* asm_arm.inc.h */,
+				0D9DDB8A21D01CB60049C978 /* uECC_vli.h */,
+				0D9DDB8B21D01CB60049C978 /* libbase58.h */,
+				0D9DDB8C21D01CB60049C978 /* curve-specific.inc */,
+				0D9DDB8D21D01CB60049C978 /* types.h */,
+				0D9DDB8E21D01CB60049C978 /* sha3.h */,
+				0D9DDB8F21D01CB60049C978 /* bip32.h */,
+				0D9DDB9021D01CB60049C978 /* ecdsa.h */,
+				0D9DDB9121D01CB60049C978 /* pbkdf2.h */,
+				0D9DDB9221D01CB60049C978 /* options.h */,
+				0D9DDB9321D01CB60049C978 /* bip39_english.h */,
+				0D9DDB9421D01CB60049C978 /* sha2.h */,
+				0D9DDB9521D01CB60049C978 /* platform-specific.inc */,
+				0D9DDB9621D01CB60049C978 /* hmac.h */,
+				0D9DDB9721D01CB60049C978 /* secp256k1.table */,
+				0D9DDB9821D01CB60049C978 /* bip39.h */,
+				0D9DDB9921D01CB60049C978 /* macros.h */,
+				0D9DDB9A21D01CB60049C978 /* rand.h */,
+				0D9DDB9B21D01CB60049C978 /* curves.h */,
+				0D9DDB9C21D01CB60049C978 /* Bridging-Header.h */,
+				0D9DDB9D21D01CB60049C978 /* bignum.h */,
+				0D9DDB9E21D01CB60049C978 /* secp256k1.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		0D9DDB9F21D01CB60049C978 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				0D9DDBA021D01CB60049C978 /* bip39.c */,
+				0D9DDBA121D01CB60049C978 /* hmac.c */,
+				0D9DDBA221D01CB60049C978 /* sha2.c */,
+				0D9DDBA321D01CB60049C978 /* rand.c */,
+				0D9DDBA421D01CB60049C978 /* curves.c */,
+				0D9DDBA521D01CB60049C978 /* secp256k1.c */,
+				0D9DDBA621D01CB60049C978 /* bignum.c */,
+				0D9DDBA721D01CB60049C978 /* ripemd160.c */,
+				0D9DDBA821D01CB60049C978 /* uECC.c */,
+				0D9DDBA921D01CB60049C978 /* bip32.c */,
+				0D9DDBAA21D01CB60049C978 /* sha3.c */,
+				0D9DDBAB21D01CB60049C978 /* base58.c */,
+				0D9DDBAC21D01CB60049C978 /* ecdsa.c */,
+				0D9DDBAD21D01CB60049C978 /* pbkdf2.c */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		0D9DDBBF21D01CBB0049C978 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				0D9DDBC021D01CBB0049C978 /* SwiftyEOS */,
+				0D9DDBE421D01CBC0049C978 /* Utils */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		0D9DDBC021D01CBB0049C978 /* SwiftyEOS */ = {
+			isa = PBXGroup;
+			children = (
+				0D9DDBC121D01CBB0049C978 /* Crypto */,
+				0D9DDBC321D01CBB0049C978 /* Contract */,
+				0D9DDBCF21D01CBB0049C978 /* Signature */,
+				0D9DDBD121D01CBB0049C978 /* Network */,
+				0D9DDBDB21D01CBB0049C978 /* Key */,
+				0D9DDBDF21D01CBB0049C978 /* Models */,
+			);
+			path = SwiftyEOS;
+			sourceTree = "<group>";
+		};
+		0D9DDBC121D01CBB0049C978 /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+				0D9DDBC221D01CBB0049C978 /* Crypto.swift */,
+			);
+			path = Crypto;
+			sourceTree = "<group>";
+		};
+		0D9DDBC321D01CBB0049C978 /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				0D9DDBC421D01CBB0049C978 /* transaction */,
+				0D9DDBC721D01CBB0049C978 /* contract */,
+				0D9DDBC921D01CBB0049C978 /* account */,
+				0D9DDBCB21D01CBB0049C978 /* resource */,
+				0D9DDBCD21D01CBB0049C978 /* currency */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		0D9DDBC421D01CBB0049C978 /* transaction */ = {
+			isa = PBXGroup;
+			children = (
+				0D9DDBC521D01CBB0049C978 /* TransactionUtil.swift */,
+				0D9DDBC621D01CBB0049C978 /* Transaction.swift */,
+			);
+			path = transaction;
+			sourceTree = "<group>";
+		};
+		0D9DDBC721D01CBB0049C978 /* contract */ = {
+			isa = PBXGroup;
+			children = (
+				0D9DDBC821D01CBB0049C978 /* Contract.swift */,
+			);
+			path = contract;
+			sourceTree = "<group>";
+		};
+		0D9DDBC921D01CBB0049C978 /* account */ = {
+			isa = PBXGroup;
+			children = (
+				0D9DDBCA21D01CBB0049C978 /* AccountUtil.swift */,
+			);
+			path = account;
+			sourceTree = "<group>";
+		};
+		0D9DDBCB21D01CBB0049C978 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				0D9DDBCC21D01CBB0049C978 /* ResourceUtil.swift */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
+		0D9DDBCD21D01CBB0049C978 /* currency */ = {
+			isa = PBXGroup;
+			children = (
+				0D9DDBCE21D01CBB0049C978 /* Currency.swift */,
+			);
+			path = currency;
+			sourceTree = "<group>";
+		};
+		0D9DDBCF21D01CBB0049C978 /* Signature */ = {
+			isa = PBXGroup;
+			children = (
+				0D9DDBD021D01CBB0049C978 /* Signature.swift */,
+			);
+			path = Signature;
+			sourceTree = "<group>";
+		};
+		0D9DDBD121D01CBB0049C978 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				0D9DDBD221D01CBB0049C978 /* Chain */,
+				0D9DDBD521D01CBB0049C978 /* History */,
+				0D9DDBD821D01CBB0049C978 /* Base */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		0D9DDBD221D01CBB0049C978 /* Chain */ = {
+			isa = PBXGroup;
+			children = (
+				0D9DDBD321D01CBB0049C978 /* ChainRouter.swift */,
+				0D9DDBD421D01CBB0049C978 /* EOSRPC+Chain.swift */,
+			);
+			path = Chain;
+			sourceTree = "<group>";
+		};
+		0D9DDBD521D01CBB0049C978 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				0D9DDBD621D01CBB0049C978 /* EOSRPC+History.swift */,
+				0D9DDBD721D01CBB0049C978 /* HistoryRouter.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		0D9DDBD821D01CBB0049C978 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				0D9DDBD921D01CBB0049C978 /* EOSRPC.swift */,
+				0D9DDBDA21D01CBB0049C978 /* BaseRouter.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		0D9DDBDB21D01CBB0049C978 /* Key */ = {
+			isa = PBXGroup;
+			children = (
+				0D9DDBDC21D01CBB0049C978 /* KeyPair.swift */,
+				0D9DDBDD21D01CBB0049C978 /* PublicKey.swift */,
+				0D9DDBDE21D01CBB0049C978 /* PrivateKey.swift */,
+			);
+			path = Key;
+			sourceTree = "<group>";
+		};
+		0D9DDBDF21D01CBB0049C978 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0D9DDBE021D01CBB0049C978 /* ChainModels.swift */,
+				0D9DDBE121D01CBC0049C978 /* Error.swift */,
+				0D9DDBE221D01CBC0049C978 /* BigInt.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0D9DDBE421D01CBC0049C978 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0D9DDBE521D01CBC0049C978 /* iOS */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		0D9DDBE521D01CBC0049C978 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				0D9DDBE621D01CBC0049C978 /* SEWallet.swift */,
+			);
+			path = iOS;
 			sourceTree = "<group>";
 		};
 		CA2B5EE2175F0D68017BB02C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0D43DA391D505AFF00AD2908 /* SwiftyJSON.framework */,
-				0D43DA301D505AF800AD2908 /* B68UIFloatLabelTextField.framework */,
-				00D299A805CB975B3A839D9B /* Pods_BloodChain.framework */,
+				1A0BEBF2BFA7CEB973A3CAD9 /* Pods_BloodChain.framework */,
+				2F9FE7B22132969C9982727A /* Pods_BloodChainUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F457AC9F2C9A8F8918DCECC5 /* Pods */ = {
+		ED29E9230A677B5A2C4E414D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				AF9B2BFBEB9EB05B049C5D7A /* Pods-BloodChain.debug.xcconfig */,
-				53E4BD42117812DB2AA019E5 /* Pods-BloodChain.release.xcconfig */,
+				FBD420DC8130A92150CEA8D3 /* Pods-BloodChain.debug.xcconfig */,
+				52E45792AB01FA6A60F2AEE2 /* Pods-BloodChain.release.xcconfig */,
+				F8D2DEDF49FC341693F57626 /* Pods-BloodChainUITests.debug.xcconfig */,
+				41E94C730620B2A0AEBC0BB5 /* Pods-BloodChainUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -225,12 +499,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0D83997F1D0DF95E0056F8B7 /* Build configuration list for PBXNativeTarget "BloodChain" */;
 			buildPhases = (
-				71AFF4CB4D80418E8E12CBAB /* Check Pods Manifest.lock */,
+				BD1D4B689457291ED25B764C /* [CP] Check Pods Manifest.lock */,
 				0D83995B1D0DF95D0056F8B7 /* Sources */,
 				0D83995C1D0DF95D0056F8B7 /* Frameworks */,
 				0D83995D1D0DF95D0056F8B7 /* Resources */,
-				A5B86C20C530312092414752 /* Embed Pods Frameworks */,
-				C24AEFD504991D9FEEBE4089 /* Copy Pods Resources */,
+				738071A9499EF71DEF3879B9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -245,6 +518,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0D8399821D0DF95E0056F8B7 /* Build configuration list for PBXNativeTarget "BloodChainUITests" */;
 			buildPhases = (
+				7BF2FE1BED119FA48E7E3904 /* [CP] Check Pods Manifest.lock */,
 				0D8399721D0DF95E0056F8B7 /* Sources */,
 				0D8399731D0DF95E0056F8B7 /* Frameworks */,
 				0D8399741D0DF95E0056F8B7 /* Resources */,
@@ -266,15 +540,17 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = Cloudgration;
 				TargetAttributes = {
 					0D83995E1D0DF95D0056F8B7 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 5WHUAKUFHC;
+						LastSwiftMigration = 1000;
 					};
 					0D8399751D0DF95E0056F8B7 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 1000;
 						TestTargetID = 0D83995E1D0DF95D0056F8B7;
 					};
 				};
@@ -290,12 +566,6 @@
 			mainGroup = 0D8399561D0DF95D0056F8B7;
 			productRefGroup = 0D8399601D0DF95D0056F8B7 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 0DDC299E1D0ED600007F0743 /* Products */;
-					ProjectRef = 0DDC299D1D0ED600007F0743 /* SwiftyJSON.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				0D83995E1D0DF95D0056F8B7 /* BloodChain */,
@@ -304,67 +574,16 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		0DDC29A81D0ED601007F0743 /* SwiftyJSON.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = SwiftyJSON.framework;
-			remoteRef = 0DDC29A71D0ED601007F0743 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		0DDC29AA1D0ED601007F0743 /* SwiftyJSON iOS Tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "SwiftyJSON iOS Tests.xctest";
-			remoteRef = 0DDC29A91D0ED601007F0743 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		0DDC29AC1D0ED601007F0743 /* SwiftyJSON.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = SwiftyJSON.framework;
-			remoteRef = 0DDC29AB1D0ED601007F0743 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		0DDC29AE1D0ED601007F0743 /* SwiftyJSON OSX Tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "SwiftyJSON OSX Tests.xctest";
-			remoteRef = 0DDC29AD1D0ED601007F0743 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		0DDC29B01D0ED601007F0743 /* SwiftyJSON.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = SwiftyJSON.framework;
-			remoteRef = 0DDC29AF1D0ED601007F0743 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		0DDC29B21D0ED601007F0743 /* SwiftyJSON.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = SwiftyJSON.framework;
-			remoteRef = 0DDC29B11D0ED601007F0743 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		0DDC29B41D0ED601007F0743 /* SwiftyJSON tvOS Tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "SwiftyJSON tvOS Tests.xctest";
-			remoteRef = 0DDC29B31D0ED601007F0743 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
 /* Begin PBXResourcesBuildPhase section */
 		0D83995D1D0DF95D0056F8B7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DF980FB1DC6611100AD9620 /* GoogleService-Info.plist in Resources */,
+				0D9DDBB021D01CB70049C978 /* secp256k1.table in Resources */,
 				0D8399701D0DF95D0056F8B7 /* LaunchScreen.storyboard in Resources */,
-				0D83996D1D0DF95D0056F8B7 /* Assets.xcassets in Resources */,
+				0DF980F91DC6516E00AD9620 /* Images.xcassets in Resources */,
 				0D8399681D0DF95D0056F8B7 /* Main.storyboard in Resources */,
-				0DB079161D6D4FF000612DF0 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,49 +597,78 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		71AFF4CB4D80418E8E12CBAB /* Check Pods Manifest.lock */ = {
+		738071A9499EF71DEF3879B9 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BloodChain/Pods-BloodChain-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AnyCodable/AnyCodable.framework",
+				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Pages/Pages.framework",
+				"${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyUserDefaults/SwiftyUserDefaults.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+				"${BUILT_PRODUCTS_DIR}/paper-onboarding/paper_onboarding.framework",
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		A5B86C20C530312092414752 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AnyCodable.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Pages.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyFloatingLabelTextField.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyUserDefaults.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/paper_onboarding.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BloodChain/Pods-BloodChain-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C24AEFD504991D9FEEBE4089 /* Copy Pods Resources */ = {
+		7BF2FE1BED119FA48E7E3904 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BloodChainUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BloodChain/Pods-BloodChain-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD1D4B689457291ED25B764C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BloodChain-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -430,14 +678,56 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D83999E1D0E046F0056F8B7 /* BloodDataViewController.swift in Sources */,
+				0D9DDBF121D01CBC0049C978 /* EOSRPC+History.swift in Sources */,
+				0D9DDBED21D01CBC0049C978 /* Currency.swift in Sources */,
+				0D9DDBBB21D01CB70049C978 /* sha3.c in Sources */,
+				0D5708321EFB69EB0004CFC5 /* BloodPageViewController.swift in Sources */,
+				0D9DDBB521D01CB70049C978 /* curves.c in Sources */,
+				0D9DDBB621D01CB70049C978 /* secp256k1.c in Sources */,
+				0D689FD31EF0788C0030156A /* BloodDataViewController.swift in Sources */,
+				0D9DDBAE21D01CB70049C978 /* curve-specific.inc in Sources */,
+				0D9DDBEA21D01CBC0049C978 /* Contract.swift in Sources */,
+				0D9DDBF821D01CBC0049C978 /* ChainModels.swift in Sources */,
+				0D5708381EFB6CF10004CFC5 /* GreenViewController.swift in Sources */,
+				0D9DDBB821D01CB70049C978 /* ripemd160.c in Sources */,
+				0D9DDBEF21D01CBC0049C978 /* ChainRouter.swift in Sources */,
+				0D9DDBEB21D01CBC0049C978 /* AccountUtil.swift in Sources */,
+				0D9DDBF521D01CBC0049C978 /* KeyPair.swift in Sources */,
+				0D9DDBEC21D01CBC0049C978 /* ResourceUtil.swift in Sources */,
+				0D9DDBF921D01CBC0049C978 /* Error.swift in Sources */,
+				0D9DDBB921D01CB70049C978 /* uECC.c in Sources */,
+				0D9DDBF421D01CBC0049C978 /* BaseRouter.swift in Sources */,
 				0D8399651D0DF95D0056F8B7 /* MainViewController.swift in Sources */,
+				0D57083A1EFB6ECE0004CFC5 /* RedViewController.swift in Sources */,
 				0D8399631D0DF95D0056F8B7 /* AppDelegate.swift in Sources */,
-				0DDC299C1D0ED5B3007F0743 /* SwiftyJSON.swift in Sources */,
+				0D9DDBE721D01CBC0049C978 /* Crypto.swift in Sources */,
 				0D43DA2D1D503DBF00AD2908 /* LoginViewController.swift in Sources */,
+				0DF980F71DC5ACDC00AD9620 /* createNewInfoVC.swift in Sources */,
+				0D9DDBF021D01CBC0049C978 /* EOSRPC+Chain.swift in Sources */,
+				0D9DDBF221D01CBC0049C978 /* HistoryRouter.swift in Sources */,
+				0D9DDBF621D01CBC0049C978 /* PublicKey.swift in Sources */,
+				0D57083C1EFB6EDF0004CFC5 /* BlueViewController.swift in Sources */,
+				0D9DDBAF21D01CB70049C978 /* platform-specific.inc in Sources */,
+				0D9DDBFA21D01CBC0049C978 /* BigInt.swift in Sources */,
+				0D9DDBE821D01CBC0049C978 /* TransactionUtil.swift in Sources */,
+				0D9DDBEE21D01CBC0049C978 /* Signature.swift in Sources */,
+				0D9DDBE921D01CBC0049C978 /* Transaction.swift in Sources */,
+				0D9DDBFC21D01CBC0049C978 /* SEWallet.swift in Sources */,
+				0D9DDBBD21D01CB70049C978 /* ecdsa.c in Sources */,
 				0D83996B1D0DF95D0056F8B7 /* BloodChain.xcdatamodeld in Sources */,
+				0D9DDBF721D01CBC0049C978 /* PrivateKey.swift in Sources */,
+				0DBAF2221EA1C51B009946DF /* createNewConfirmVC.swift in Sources */,
+				0DBAF21E1EA1C440009946DF /* createNewHistoryVC.swift in Sources */,
+				0D9DDBB421D01CB70049C978 /* rand.c in Sources */,
+				0D9DDBF321D01CBC0049C978 /* EOSRPC.swift in Sources */,
+				0D9DDBB721D01CB70049C978 /* bignum.c in Sources */,
+				0D9DDBBE21D01CB70049C978 /* pbkdf2.c in Sources */,
 				0D8399861D0DFC850056F8B7 /* ScannerViewController.swift in Sources */,
-				0D8399A21D0E43A50056F8B7 /* AddBloodDataTableViewController.swift in Sources */,
+				0D9DDBB221D01CB70049C978 /* hmac.c in Sources */,
+				0D9DDBBC21D01CB70049C978 /* base58.c in Sources */,
+				0D9DDBBA21D01CB70049C978 /* bip32.c in Sources */,
+				0D9DDBB121D01CB70049C978 /* bip39.c in Sources */,
+				0D9DDBB321D01CB70049C978 /* sha2.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,13 +778,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -516,11 +816,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				HEADER_SEARCH_PATHS = Libraries/include;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Libraries/include/Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SYSTEM_HEADER_SEARCH_PATHS = Libraries/include;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -534,13 +837,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -556,9 +869,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				HEADER_SEARCH_PATHS = Libraries/include;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Libraries/include/Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SYSTEM_HEADER_SEARCH_PATHS = Libraries/include;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -566,8 +883,9 @@
 		};
 		0D8399801D0DF95E0056F8B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AF9B2BFBEB9EB05B049C5D7A /* Pods-BloodChain.debug.xcconfig */;
+			baseConfigurationReference = FBD420DC8130A92150CEA8D3 /* Pods-BloodChain.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -575,20 +893,32 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PODS_ROOT}/Firebase/CoreOnly/Sources",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Firebase\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseAuthInterop\"",
+					Libraries/include,
+				);
 				INFOPLIST_FILE = BloodChain/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.BloodChainInc.BloodChain;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Libraries/include/Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				SYSTEM_HEADER_SEARCH_PATHS = Libraries/include;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		0D8399811D0DF95E0056F8B7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 53E4BD42117812DB2AA019E5 /* Pods-BloodChain.release.xcconfig */;
+			baseConfigurationReference = 52E45792AB01FA6A60F2AEE2 /* Pods-BloodChain.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -596,34 +926,49 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PODS_ROOT}/Firebase/CoreOnly/Sources",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Firebase\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseAuthInterop\"",
+					Libraries/include,
+				);
 				INFOPLIST_FILE = BloodChain/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.BloodChainInc.BloodChain;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Libraries/include/Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				SYSTEM_HEADER_SEARCH_PATHS = Libraries/include;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 		0D8399831D0DF95E0056F8B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8D2DEDF49FC341693F57626 /* Pods-BloodChainUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = BloodChainUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Cloudgration.BloodChainUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
 				TEST_TARGET_NAME = BloodChain;
 			};
 			name = Debug;
 		};
 		0D8399841D0DF95E0056F8B7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41E94C730620B2A0AEBC0BB5 /* Pods-BloodChainUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = BloodChainUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Cloudgration.BloodChainUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
 				TEST_TARGET_NAME = BloodChain;
 			};
 			name = Release;
